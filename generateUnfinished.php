@@ -8,7 +8,6 @@ function jdecode($data) {
     return $arr;
 }
 
-$dsn = "odbc:Driver={SQL Server};Server=10.0.0.108;Database=Bodwell;Uid=sa;Pwd=Yv9FrUpx0a;";
 $conn = new PDO($dsn);
 $query = "SELECT F.*,U.LastLogIn, U.RelationshipToStudent,U.CreateDate as AccountCreatedDate FROM tblBHSApplicationUnfinished F
 LEFT JOIN tblBHSApplicationUser U ON U.LoginID = F.LoginID

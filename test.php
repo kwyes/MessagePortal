@@ -1,6 +1,4 @@
 <?php
-// $dsn = "odbc:Driver={SQL Server};Server=10.0.0.209;Database=Bodwell;Uid=sa;Pwd=pm2em9GhOOWt;";
-$dsn = "odbc:Driver={SQL Server};Server=10.0.0.108;Database=Bodwell;Uid=sa;Pwd=Yv9FrUpx0a;";
 $conn = new PDO($dsn);
 $query = "SELECT StudentID
       ,LastName

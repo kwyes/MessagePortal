@@ -19,7 +19,6 @@ function generateRandomPassword($length=10) {
 
 
 
-$dsn = "odbc:Driver={SQL Server};Server=10.100.4.6;Database=Bodwell;Uid=web;Pwd=AJgw!cG4nw;";
 $conn = new PDO($dsn);
 $query = "SELECT c.LastName as pLName, c.FirstName as pFName, s.* FROM tblBHSStudent s
 LEFT JOIN tblBHSStudentContact c on c.StudentID = s.StudentID and c.ContactTab = 'PG1'

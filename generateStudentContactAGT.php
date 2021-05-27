@@ -24,8 +24,6 @@ function makeInsertQuery($table, array $data) {
     $sql = "INSERT $table ($fields) VALUES ($values);\n";
     return $sql;
 }
-$dsn = "odbc:Driver={SQL Server};Server=10.0.0.108;Database=Bodwell;Uid=sa;Pwd=Yv9FrUpx0a;";
-// $dsn = "odbc:Driver={SQL Server};Server=10.0.0.209;Database=Bodwell;Uid=sa;Pwd=pm2em9GhOOWt;";
 $conn = new PDO($dsn);
 $query = "SELECT Distinct c.StudentID, s.AgentID, a.Email, a.AgentName, a.ContactFName, a.ContactLName, a.Address1, a.City, a.Province, a.PostalCode, a.Country FROM tblBHSStudentContact c
 LEFT JOIN tblBHSStudent s on s.StudentID = c.StudentID

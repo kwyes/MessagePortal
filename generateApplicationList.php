@@ -1,7 +1,6 @@
 <?php
 
 
-$dsn = "odbc:Driver={SQL Server};Server=10.100.4.6;Database=Bodwell;Uid=web;Pwd=AJgw!cG4nw;";
 $conn = new PDO($dsn);
 $query = "SELECT Distinct A.ApplicationID, A.FirstName,
 A.LastName1, A.CountryOfBirth,

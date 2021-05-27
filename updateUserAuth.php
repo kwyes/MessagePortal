@@ -18,7 +18,6 @@ function generateRandomPassword($length=10) {
 }
 
 
-$dsn = "odbc:Driver={SQL Server};Server=10.0.0.108;Database=Bodwell;Uid=sa;Pwd=Yv9FrUpx0a;";
 $conn = new PDO($dsn);
 $query = "SELECT * FROM tblBHSUserAuth WHERE CreateUserID = 'F2178'";
 $delete_query = "DELETE FROM tblBHSUserAuth WHERE UserID = '{UserID}'";

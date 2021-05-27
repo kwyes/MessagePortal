@@ -6,7 +6,7 @@ const EXPO_API_URL = 'https://exp.host/--/api/v2/push/send';
 
 $list = array();
 
-array_push($list, "ExponentPushToken[0VeCqnOw7Rx-BTKc3MheGB]","ExponentPushToken[1-Ia99BjptQO3MsTC34zaO]");
+array_push($list, "ExponentPushToken[-BTKc3MheGB]","ExponentPushToken[1-]");
 $b = 'test';
 echo pushNotification($list, $b);
 function pushNotification($token, $body){

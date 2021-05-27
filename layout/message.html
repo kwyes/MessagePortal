@@ -1,0 +1,406 @@
+<div class="main-panel">
+
+  <nav class="navbar navbar-transparent navbar-absolute">
+    <div class="container-fluid">
+      <div class="navbar-minimize">
+        <button id="minimizeSidebar" class="btn btn-round btn-white btn-fill btn-just-icon">
+          <i class="material-icons visible-on-sidebar-regular">more_vert</i>
+          <i class="material-icons visible-on-sidebar-mini">view_list</i>
+        </button>
+      </div>
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          Message Management
+        </a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="separator hidden-lg hidden-md"></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="content">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <form id="messageForm" class="" action="" method="post" enctype="multipart/form-data">
+
+            <div class="card">
+              <div class="card-header card-header-icon" data-background-color="black">
+                <i class="material-icons">email</i>
+              </div>
+              <div class="card-content">
+                <div>
+                  <h4 class="card-title">Create Message</h4>
+                </div>
+
+                <div class="card-body">
+                  <div class="task1">
+                    <div class="row row-eq-height mg-v-20">
+                      <div class="col-md-4 text-right">Message Category
+                        <span class="color-red">*</span></div>
+                      <div class="col-md-8">
+                        <div class="form-group width60per">
+                          <select id="msg-category" class="form-control custom-form" name="category"
+                            required="required">
+                            <option value="">Select Category..</option>
+                            <option value="announcement_school" selected>School Announcement</option>
+                            <option value="news_schoolgeneral">School General</option>
+                            <option value="accounting_feereminder">Fee Reminder</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row row-eq-height mg-v-20">
+                      <div class="col-md-4 text-right">Title
+                        <span class="color-red">*</span></div>
+                      <div class="col-md-8 form-group">
+                        <input type="text" class="form-control width60per" name="title" id="msg-title" maxlength="60"
+                          required="required">
+                      </div>
+                    </div>
+
+                    <div class="row row-eq-height mg-v-20">
+                      <div class="col-md-4 text-right">Body</div>
+                      <div class="col-md-8 form-group">
+                        <textarea class="form-control align-self-end width60per" id="msg-body" name="body" rows="10"
+                          maxlength="280"></textarea>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-12 text-center">
+                        <button type="button" class="btn btn-fill btn-default btn-sm"
+                          id="msg-cancel-btn">Cancel</button>
+                        <button type="button" class="btn btn-fill btn-info btn-sm" id="msg-next-btn">Next
+                          <i class="material-icons">keyboard_arrow_right</i></button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="task2">
+                    <div class="row row-eq-height mg-v-20">
+                      <div class="col-md-4 text-right">Publish to
+                        <span class="color-red">*</span></div>
+                      <div class="col-md-8 form-group">
+                        <div>
+                          <label class="form-check-label mg-r-20">
+                            <input class="form-check-input checkbox-credit checkAll" type="checkbox" name="publishCheck"
+                              value="1">
+                            Select all
+                          </label><br />
+                          <label class="form-check-label mg-r-20">
+                            <input class="form-check-input checkbox-credit publishTo" type="checkbox" name="pmCheck"
+                              value="1" checked>
+                            Parent Mobile App
+                          </label>
+
+                          <label class="form-check-label">
+                            <input class="form-check-input checkbox-credit publishTo" type="checkbox" name="pwCheck"
+                              value="1">
+                            Parent Portal Web
+                          </label><br />
+                          <label class="form-check-label mg-r-20">
+                            <input class="form-check-input checkbox-credit publishTo" type="checkbox" name="smCheck"
+                              value="1">
+                            Student Mobile App
+                          </label>
+                          <label class="form-check-label">
+                            <input class="form-check-input checkbox-credit publishTo" type="checkbox" name="swCheck"
+                              value="1">
+                            Student Portal Web
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row row-eq-height mg-v-20">
+                      <div class="col-md-4 text-right">Post on the front page slider?
+                        <span class="color-red">*</span></div>
+                      <div class="col-md-8">
+                        <div class="row custom-row">
+                          <div class="form-check-radio col-md-3">
+                            <label class="form-check-label" id="radioY-label">
+                              <input class="form-check-input post-fp" type="radio" name="post" id="" value="1"
+                                autocomplete="off">
+                              Yes
+                              <span class="form-check-sign"></span>
+                            </label>
+                          </div>
+                          <div class="form-check-radio col-md-3">
+                            <label class="form-check-label">
+                              <input class="form-check-input post-fp" type="radio" name="post" id="" value="0"
+                                autocomplete="off" checked="checked">
+                              No
+                              <span class="form-check-sign"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row row-eq-height mg-v-20">
+                      <div class="col-md-4 text-right">Publish immediately?</div>
+                      <div class="col-md-8">
+                        <div class="row custom-row">
+                          <div class="form-check-radio col-md-3">
+                            <label class="form-check-label radio-publish">
+                              <input class="form-check-input pub-i" type="radio" name="publish" id="" value="1"
+                                autocomplete="off" checked="checked">
+                              Yes
+                              <span class="form-check-sign"></span>
+                            </label>
+                          </div>
+                          <div class="form-check-radio col-md-3">
+                            <label class="form-check-label radio-publish">
+                              <input class="form-check-input pub-i" type="radio" name="publish" id="" value="0"
+                                autocomplete="off">
+                              No
+                              <span class="form-check-sign"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row row-eq-height mg-v-20 publishWrapper">
+                      <div class="col-md-4 text-right">Publish at</div>
+                      <div class="col-md-8">
+                        <input type="text" class="form-control datepicker-pa width60per"
+                          data-date-format="YYYY-MM-DD hh:mm A" name="publishAt" id="publishAt">
+                        <label class="fontSize12">UTC-8 Pacific Time (Vancouver)
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="row row-eq-height mg-v-20">
+                      <div class="col-md-4 text-right">Message has expiry date?</div>
+                      <div class="col-md-8">
+                        <div class="row custom-row">
+                          <div class="form-check-radio col-md-3">
+                            <label class="form-check-label radio-expiry">
+                              <input class="form-check-input ex-date" type="radio" name="expiry" id="" value="1"
+                                autocomplete="off">
+                              Yes
+                              <span class="form-check-sign"></span>
+                            </label>
+                          </div>
+                          <div class="form-check-radio col-md-3">
+                            <label class="form-check-label radio-expiry">
+                              <input class="form-check-input ex-date" type="radio" name="expiry" id="" value="0"
+                                autocomplete="off" checked="checked">
+                              No
+                              <span class="form-check-sign"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row row-eq-height mg-v-20 displayUntil">
+                      <div class="col-md-4 text-right">Display until</div>
+                      <div class="col-md-8">
+                        <input type="text" class="form-control datepicker-du width60per"
+                          data-date-format="YYYY-MM-DD hh:mm A" name="expiryDate" id="disp-until">
+                        <label class="fontSize12">UTC-8 Pacific Time (Vancouver)
+                        </label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12 text-center">
+                        <button type="button" class="btn btn-fill btn-info btn-sm" id="msg-back-btn">
+                          <i class="material-icons">keyboard_arrow_left</i> Back</button>
+                        <button type="button" class="btn btn-fill btn-warning btn-sm" id="msg-save-btn">Save and
+                          Publish</button>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+              <!-- end content-->
+            </div>
+            <!-- end card -->
+          </form>
+        </div>
+        <!-- end col-md-12 -->
+      </div>
+      <!-- end row -->
+    </div>
+  </div>
+</div>
+<script type='text/javascript' src='editor/textboxio/textboxio.js'></script>
+<script>
+  var glo;
+  $(document).ready(function () {
+
+    var today = moment(new Date).format('YYYY-MM-DD hh:mm A');
+    $('#publishAt').val(today);
+    $('.publishWrapper').hide();
+
+    // $('#publishAt').datetimepicker(moment(today).format('YYYY-MM-DD hh:mm A'), TimeZone);
+    $(".datepicker-pa").datetimepicker({
+      ignoreReadonly: true,
+      icons: {
+        time: "fa fa-clock-o",
+        date: "fa fa-calendar",
+        up: "fa fa-chevron-up",
+        down: "fa fa-chevron-down",
+        previous: "fa fa-chevron-left",
+        next: "fa fa-chevron-right",
+        today: "fa fa-screenshot",
+        clear: "fa fa-trash",
+        close: "fa fa-remove"
+      },
+      minDate: new Date()
+    });
+
+    $('#publishAt').on('dp.change', function (e) {
+      var pDate = $('#publishAt').val();
+      var dDate = $("#disp-until").val();
+
+      if (new Date(pDate).getTime() > new Date(dDate).getTime()) {
+        var newdDate = moment(new Date(new Date(pDate).getTime() + 24 * 60 * 60 * 1000)).format(
+          'YYYY-MM-DD hh:mm A');
+        $('#disp-until').val(newdDate);
+        var minDate = $(".datepicker-du").datetimepicker("option", "minDate");
+      }
+    })
+
+    $(".radio-expiry input").click(function (event) {
+      var target = event.target;
+      var val = $(target).val();
+      var pdate = $('#publishAt').val();
+
+      if (val == 1) {
+        $(".displayUntil").css("display", "inline");
+        $(".datepicker-du").datetimepicker({
+          ignoreReadonly: true,
+          icons: {
+            time: "fa fa-clock-o",
+            date: "fa fa-calendar",
+            up: "fa fa-chevron-up",
+            down: "fa fa-chevron-down",
+            previous: "fa fa-chevron-left",
+            next: "fa fa-chevron-right",
+            today: "fa fa-screenshot",
+            clear: "fa fa-trash",
+            close: "fa fa-remove"
+          },
+          minDate: new Date(pdate).getTime() + 24 * 60 * 60 * 1000 - 1
+        });
+        $("#disp-until").prop("required", true);
+      } else {
+        $(".displayUntil").css("display", "none");
+      }
+    });
+
+    $(".radio-publish input").click(function (event) {
+      var target = event.target;
+      var val = $(target).val();
+
+      if (val == 1) {
+        $('.publishWrapper').hide();
+        $('#publishAt').val(moment(new Date).format('YYYY-MM-DD hh:mm A'));
+        $('#msg-save-btn').html('Save and Publish');
+      } else {
+        $('.publishWrapper').show();
+        var tomorrow = moment(new Date(new Date().getTime() + 24 * 60 * 60 * 1000)).format('YYYY-MM-DD');
+        $('#publishAt').val(moment(tomorrow).format('YYYY-MM-DD hh:mm A'));
+        $('#msg-save-btn').html('Save');
+      }
+    });
+
+    $("#msg-save-btn").click(function () {
+      setFormValidation("#messageForm");
+      if ($("#messageForm").valid()) {
+        var messageForm = $("#messageForm").serializeArray();
+        var messageFormObject = {};
+        $.each(messageForm, function (i, v) {
+          messageFormObject[v.name] = v.value;
+        });
+        $("form .checkbox-credit").each(function () {
+          messageFormObject[this.name] = this.checked;
+        });
+        var pdate = messageFormObject.publishAt;
+        var ddate = messageFormObject.expiryDate;
+        var body = messageFormObject.body;
+
+        console.log(messageFormObject);
+
+        if (new Date(pdate).getTime() > new Date(ddate).getTime()) {
+          showSwal('error', '"Display until" is invalid.')
+        } else if (body == '') {
+          swal({
+            title: 'There\'s no message body.',
+            text: "Do you want to publish without it?",
+            type: 'warning',
+            showCancelButton: true,
+            confirmButtonClass: 'btn btn-success',
+            cancelButtonClass: 'btn btn-danger',
+            confirmButtonText: 'Yes, I do.',
+            buttonsStyling: false
+          })
+            .then(function () {
+              saveMessage(messageFormObject);
+              showSwal('success', '')
+            })
+            .catch(swal.noop)
+        } else {
+          saveMessage(messageFormObject);
+          // showSwal('success', '')
+        }
+      }
+    });
+
+    $(".checkAll").click(function (event) {
+      var target = event.target;
+      $(target).toggleClass("allChecked")
+      if ($(target).hasClass("allChecked")) {
+        $(".publishTo").prop("checked", true);
+      } else {
+        $(".publishTo").prop("checked", false);
+      }
+    })
+
+    $(".publishTo").click(function () {
+      if ($(".checkAll").hasClass("allChecked")) {
+        $(".checkAll").toggleClass("allChecked");
+        $(".checkAll").prop("checked", false);
+      }
+    })
+
+    $("#radioY-label input[value='1']").click(function () {
+      $(".requireIcon").css("display", "inline");
+      $("#msg-body").prop("required", true);
+    });
+
+    $('#msg-next-btn').click(function () {
+      setFormValidation("#messageForm");
+      if ($("#messageForm").valid()) {
+        $('.task1').css('display', 'none');
+        $('.task2').css('display', 'block');
+      }
+    })
+
+    $('#msg-cancel-btn').click(function () {
+      location.reload();
+    })
+
+    $('#msg-back-btn').click(function () {
+      $('.task1').css('display', 'block');
+      $('.task2').css('display', 'none');
+    })
+
+  });
+</script>

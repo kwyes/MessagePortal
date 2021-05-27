@@ -1,0 +1,68 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "901c7a60d759fb398f2d52f25c70ed44",
+    "packages": [
+        {
+            "name": "alymosul/exponent-server-sdk-php",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/terryBaz/exponent-server-sdk-php.git",
+                "reference": "bbfb29ea7e997a55b2999900a79b19efd826477c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/terryBaz/exponent-server-sdk-php/zipball/bbfb29ea7e997a55b2999900a79b19efd826477c",
+                "reference": "bbfb29ea7e997a55b2999900a79b19efd826477c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.25"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ExponentPhpSDK\\": "lib"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aly Suleiman",
+                    "email": "alymosul@gmail.com"
+                },
+                {
+                    "name": "Tarek BAZINE",
+                    "email": "bazine.tarik@gmail.com"
+                }
+            ],
+            "description": "Server-side library for working with Expo push notifications using PHP",
+            "keywords": [
+                "expo",
+                "exponent",
+                "notifications",
+                "push"
+            ],
+            "support": {
+                "source": "https://github.com/terryBaz/exponent-server-sdk-php/tree/master"
+            },
+            "time": "2018-08-16T14:22:49+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "alymosul/exponent-server-sdk-php": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

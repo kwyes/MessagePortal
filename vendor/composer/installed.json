@@ -1,0 +1,52 @@
+[
+    {
+        "name": "alymosul/exponent-server-sdk-php",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/terryBaz/exponent-server-sdk-php.git",
+            "reference": "bbfb29ea7e997a55b2999900a79b19efd826477c"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/terryBaz/exponent-server-sdk-php/zipball/bbfb29ea7e997a55b2999900a79b19efd826477c",
+            "reference": "bbfb29ea7e997a55b2999900a79b19efd826477c",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.6.25"
+        },
+        "time": "2018-08-16T14:22:49+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "ExponentPhpSDK\\": "lib"
+            }
+        },
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Aly Suleiman",
+                "email": "alymosul@gmail.com"
+            },
+            {
+                "name": "Tarek BAZINE",
+                "email": "bazine.tarik@gmail.com"
+            }
+        ],
+        "description": "Server-side library for working with Expo push notifications using PHP",
+        "keywords": [
+            "expo",
+            "exponent",
+            "notifications",
+            "push"
+        ],
+        "support": {
+            "source": "https://github.com/terryBaz/exponent-server-sdk-php/tree/master"
+        }
+    }
+]

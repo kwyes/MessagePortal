@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    </head>
+  <body>
+    <input type="text" name="" value="" class="email">
+    <button type="button" name="button" class="chk">Check</button>
+    <div class="chk-result">
+
+    </div>
+  </body>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.chk').click(function(event) {
+        validationChk();
+      });
+    });
+
+    function validationChk(){
+      let email = $('.email').val();
+      // alert(email);
+      $.ajax({
+        url: 'validationChk.php',
+        type: 'POST',
+        dataType: 'json',
+        data: {email: email}
+      })
+      .done(function(response) {
+        console.log(response);
+        $('.chk-result').html(response['body'].result);
+      })
+      .fail(function() {
+        console.log("error");
+      })
+      .always(function() {
+        console.log("complete");
+      });
+
+    }
+  </script>
+</html>

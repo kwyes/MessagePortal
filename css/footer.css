@@ -1,0 +1,13 @@
+.footer{
+  position: absolute;
+left: 0;
+right: 0;
+bottom: 0;
+height: 40px;
+line-height: 40px;
+font-size: .8em;
+font-style: italic;
+color: #fff;
+background-color: rgba(0,0,0,.5);
+text-align: center;
+}

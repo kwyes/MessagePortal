@@ -1,0 +1,199 @@
+<div class="modal fade modal-primary" id="listModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-custom">
+        <div class="modal-content">
+            <div class="card card-login card-plain">
+                <div class="modal-header justify-content-center">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="modal-close-icon">&times;</span>
+                    </button>
+
+                    <div class="header header-primary text-center">
+                        <h4>Message Detail</h4>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="card-body">
+                        <form id="listMdlForm" action="" method="">
+                            <input type="hidden" class="msgId" name="msgId">
+                            <div class="row mg-v-10 row-eq-height">
+                                <div class="col-md-4 text-right"><span class="color-red">*</span> Message Category :
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <select class="msgCategory form-control" name="msgCategory">
+                                        <option value="announcement_school">Announcement School</option>
+                                        <option value="news_schoolgeneral">School General</option>
+                                        <option value="accounting_feereminder">Fee Reminder</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row mg-v-10 row-eq-height">
+                                <div class="col-md-4 text-right">From :
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="from"></div>
+                                </div>
+                            </div>
+                            <div class="row mg-v-10 row-eq-height">
+                                <div class="col-md-4 text-right"><span class="color-red">*</span> Subject :
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <input type="text" class="subject form-control" maxlength="70" name="subject"
+                                        required="required">
+                                </div>
+                            </div>
+                            <div class="row mg-v-10 row-eq-height">
+                                <div class="col-md-4 text-right">Body :
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <div class="wrapper-editor">
+                                        <textarea class="form-control align-self-end" name="body" id="edit-body"
+                                            rows="10" maxlength="280" placeholder="Max 280 characters... "></textarea>
+                                    </div>
+                                    <!-- <textarea class="form-control body" name="body" rows="5" maxlength="280"></textarea> -->
+                                </div>
+                            </div>
+                            <div class="row mg-v-10 row-eq-height">
+                                <div class="col-md-4 text-right">Published on :
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="pdate"></div>
+                                </div>
+                            </div>
+                            <div class="row mg-v-10 row-eq-height">
+                                <div class="col-md-4 text-right">Published to :
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="publishto"></div>
+                                </div>
+                            </div>
+                            <div class="row mg-v-10 row-eq-height">
+                                <div class="col-md-4 text-right"><span class="color-red">*</span> Push to front page? :
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <div class="row custom-row">
+                                        <div class="form-check-radio col-md-3">
+                                            <label class="form-check-label radio-frontpage">
+                                                <input class="form-check-input frontpage" type="radio" name="frontpage"
+                                                    id="" value="1" autocomplete="off">
+                                                Yes
+                                                <span class="form-check-sign"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check-radio col-md-3">
+                                            <label class="form-check-label radio-frontpage">
+                                                <input class="form-check-input frontpage" type="radio" name="frontpage"
+                                                    id="" value="0" autocomplete="off">
+                                                No
+                                                <span class="form-check-sign"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mg-v-10 row-eq-height">
+                                <div class="col-md-4 text-right"><span class="color-red">*</span> Message expires? :
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <div class="row custom-row">
+                                        <div class="form-check-radio col-md-3">
+                                            <label class="form-check-label radio-expires">
+                                                <input class="form-check-input expires" type="radio" name="expires"
+                                                    id="" value="1" autocomplete="off">
+                                                Yes
+                                                <span class="form-check-sign"></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-check-radio col-md-3">
+                                            <label class="form-check-label radio-expires">
+                                                <input class="form-check-input expires" type="radio" name="expires"
+                                                    id="" value="0" autocomplete="off">
+                                                No
+                                                <span class="form-check-sign"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mg-v-10 row-eq-height edate-input">
+                                <div class="col-md-4 text-right"><span class="color-red">*</span> Expiry date :
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <input type="text" class="form-control datepicker-du edate"
+                                        data-date-format="YYYY-MM-DD hh:mm A" name="edate" readonly>
+                                    <label class="fontSize12">UTC-8 Pacific Time (Vancouver)
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row row-justify-center ">
+                                <div class="col-md-5">
+                                    <div class="row mg-v-10">
+                                        <div class="col-md-4 text-right">
+                                            <label>Last modified at
+                                            </label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="modifieddate"></label>
+                                        </div>
+                                    </div>
+                                    <div class="row mg-v-10">
+                                        <div class="col-md-4 text-right">
+                                            <label>Created at
+                                            </label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="createddate"></label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12 text-center">
+                    <button type="button" class="btn btn-fill btn-default btn-sm" id="listMdl-close-btn">Cancel</button>
+                    <button type="button" class="btn btn-fill btn-info btn-sm" id="listMdl-save-btn">Save</button>
+                    <button type="button" class="btn btn-fill btn-danger btn-sm" id="listMdl-remove-btn">Remove</button>
+                </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+</div>
+<script type='text/javascript' src='editor/textboxio/textboxio.js'></script>
+
+<script>
+    $(document).ready(function () {
+        $(".radio-expires input").click(function (event) {
+            var target = event.target;
+            var val = $(target).val();
+            var pdate = $(".pdate").text();
+            if (val == 1) {
+                $(".edate-input").css("display", "flex");
+                $(".datepicker-du").datetimepicker({
+                    ignoreReadonly: true,
+                    icons: {
+                        time: "fa fa-clock-o",
+                        date: "fa fa-calendar",
+                        up: "fa fa-chevron-up",
+                        down: "fa fa-chevron-down",
+                        previous: "fa fa-chevron-left",
+                        next: "fa fa-chevron-right",
+                        today: "fa fa-screenshot",
+                        clear: "fa fa-trash",
+                        close: "fa fa-remove"
+                    },
+                    minDate: new Date(pdate).getTime() + 7 * 24 * 60 * 60 * 1000
+                });
+                $(".edate").val(moment(new Date(pdate).getTime() + 7 * 24 * 60 * 60 * 1000).format('YYYY-MM-DD hh:mm A'));
+                $(".edate").prop("required", true);
+            } else {
+                $(".edate-input").css("display", "none");
+            }
+        });
+    });
+</script>

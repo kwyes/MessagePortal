@@ -1,0 +1,781 @@
+div.default-layout {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  background: #fff;
+  background: linear-gradient(#fff, #d6eeec)
+}
+
+div.default-layout>.content {
+  position: absolute;
+  left: .5em;
+  top: 60px;
+  right: .5em;
+  bottom: 40px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  overflow-x: hidden;
+  overflow-y: auto
+}
+
+div.default-layout>.content.toolbar {
+  top: 100px
+}
+
+div.default-layout>.footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 40px;
+  line-height: 40px;
+  font-size: .8em;
+  font-style: italic;
+  color: #fff;
+  background-color: rgba(0, 0, 0, .5);
+  text-align: center
+}
+
+div.circular-progress-container {
+  text-align: center;
+  margin-bottom: 1em
+}
+
+div.react-table-container {
+  position: relative;
+  overflow-x: auto;
+  margin-bottom: 1em
+}
+
+div.react-table-container>table.react-table {
+  font-size: .9em;
+  border-collapse: collapse;
+  width: 100%
+}
+
+div.react-table-container>table.react-table>thead>tr>th {
+  font-weight: 500;
+  padding: .7em;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #607d8b
+}
+
+div.react-table-container>table.react-table>thead>tr>th.red {
+  color: #fff;
+  background-color: #f44336
+}
+
+div.react-table-container>table.react-table>thead>tr>th.pink {
+  color: #fff;
+  background-color: #e91e63
+}
+
+div.react-table-container>table.react-table>thead>tr>th.purple {
+  color: #fff;
+  background-color: #9c27b0
+}
+
+div.react-table-container>table.react-table>thead>tr>th.deep-purple {
+  color: #fff;
+  background-color: #673ab7
+}
+
+div.react-table-container>table.react-table>thead>tr>th.indigo {
+  color: #fff;
+  background-color: #3f51b5
+}
+
+div.react-table-container>table.react-table>thead>tr>th.blue {
+  color: #fff;
+  background-color: #2196f3
+}
+
+div.react-table-container>table.react-table>thead>tr>th.light-blue {
+  color: #fff;
+  background-color: #03a9f4
+}
+
+div.react-table-container>table.react-table>thead>tr>th.cyan {
+  color: #fff;
+  background-color: #00bcd4
+}
+
+div.react-table-container>table.react-table>thead>tr>th.teal {
+  color: #fff;
+  background-color: #009688
+}
+
+div.react-table-container>table.react-table>thead>tr>th.green {
+  color: #fff;
+  background-color: #4caf50
+}
+
+div.react-table-container>table.react-table>thead>tr>th.light-green {
+  color: #fff;
+  background-color: #8bc34a
+}
+
+div.react-table-container>table.react-table>thead>tr>th.lime {
+  color: #fff;
+  background-color: #cddc39
+}
+
+div.react-table-container>table.react-table>thead>tr>th.yellow {
+  color: #fff;
+  background-color: #ffeb3b
+}
+
+div.react-table-container>table.react-table>thead>tr>th.amber {
+  color: #fff;
+  background-color: #ffc107
+}
+
+div.react-table-container>table.react-table>thead>tr>th.orange {
+  color: #fff;
+  background-color: #ff9800
+}
+
+div.react-table-container>table.react-table>thead>tr>th.deep-orange {
+  color: #fff;
+  background-color: #ff5722
+}
+
+div.react-table-container>table.react-table>thead>tr>th.brown {
+  color: #fff;
+  background-color: #795548
+}
+
+div.react-table-container>table.react-table>thead>tr>th.blue-grey {
+  color: #fff;
+  background-color: #607d8b
+}
+
+div.react-table-container>table.react-table>thead>tr>th.grey {
+  color: #fff;
+  background-color: #9e9e9e
+}
+
+div.react-table-container>table.react-table>tbody>tr>td {
+  padding: .7em;
+  background-color: #eceff1;
+  color: #263238;
+  border-top: 1px solid #cfd8dc;
+  border-bottom: 1px solid #cfd8dc
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.highlight {
+  background-color: #cfd8dc
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.red {
+  background-color: #ffebee;
+  color: #b71c1c;
+  border-bottom: 1px solid #ffcdd2
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.red.highlight {
+  background-color: #ffcdd2
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.pink {
+  background-color: #fce4ec;
+  color: #880e4f;
+  border-bottom: 1px solid #f8bbd0
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.pink.highlight {
+  background-color: #f8bbd0
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.purple {
+  background-color: #f3e5f5;
+  color: #4a148c;
+  border-bottom: 1px solid #e1bee7
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.purple.highlight {
+  background-color: #e1bee7
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.deep-purple {
+  background-color: #ede7f6;
+  color: #311b92;
+  border-bottom: 1px solid #d1c4e9
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.deep-purple.highlight {
+  background-color: #d1c4e9
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.indigo {
+  background-color: #e8eaf6;
+  color: #1a237e;
+  border-bottom: 1px solid #c5cae9
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.indigo.highlight {
+  background-color: #c5cae9
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.blue {
+  background-color: #e3f2fd;
+  color: #0d47a1;
+  border-bottom: 1px solid #bbdefb
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.blue.highlight {
+  background-color: #bbdefb
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.light-blue {
+  background-color: #e1f5fe;
+  color: #01579b;
+  border-bottom: 1px solid #b3e5fc
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.light-blue.highlight {
+  background-color: #b3e5fc
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.cyan {
+  background-color: #e0f7fa;
+  color: #006064;
+  border-bottom: 1px solid #b2ebf2
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.cyan.highlight {
+  background-color: #b2ebf2
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.teal {
+  background-color: #e0f2f1;
+  color: #004d40;
+  border-bottom: 1px solid #b2dfdb
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.teal.highlight {
+  background-color: #b2dfdb
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.green {
+  background-color: #e8f5e9;
+  color: #1b5e20;
+  border-bottom: 1px solid #c8e6c9
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.green.highlight {
+  background-color: #c8e6c9
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.light-green {
+  background-color: #f1f8e9;
+  color: #33691e;
+  border-bottom: 1px solid #dcedc8
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.light-green.highlight {
+  background-color: #dcedc8
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.lime {
+  background-color: #f9fbe7;
+  color: #827717;
+  border-bottom: 1px solid #f0f4c3
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.lime.highlight {
+  background-color: #f0f4c3
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.yellow {
+  background-color: #fffde7;
+  color: #f57f17;
+  border-bottom: 1px solid #fff9c4
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.yellow.highlight {
+  background-color: #fff9c4
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.amber {
+  background-color: #fff8e1;
+  color: #ff6f00;
+  border-bottom: 1px solid #ffecb3
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.amber.highlight {
+  background-color: #ffecb3
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.orange {
+  background-color: #fff3e0;
+  color: #e65100;
+  border-bottom: 1px solid #ffe0b2
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.orange.highlight {
+  background-color: #ffe0b2
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.deep-orange {
+  background-color: #fbe9e7;
+  color: #bf360c;
+  border-bottom: 1px solid #ffccbc
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.deep-orange.highlight {
+  background-color: #ffccbc
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.brown {
+  background-color: #efebe9;
+  color: #3e2723;
+  border-bottom: 1px solid #d7ccc8
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.brown.highlight {
+  background-color: #d7ccc8
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.blue-grey {
+  background-color: #eceff1;
+  color: #263238;
+  border-bottom: 1px solid #cfd8dc
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.blue-grey.highlight {
+  background-color: #cfd8dc
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.grey {
+  background-color: #fafafa;
+  color: #212121;
+  border-bottom: 1px solid #f5f5f5
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.grey.highlight {
+  background-color: #f5f5f5
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.right {
+  text-align: right
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.center {
+  text-align: center
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.bold {
+  font-weight: 700
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.italic {
+  font-style: italic
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.width-30 {
+  width: 30px
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.width-30>span {
+  width: 30px;
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.width-40 {
+  width: 40px
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.width-40>span {
+  width: 40px;
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.width-50 {
+  width: 50px
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.width-50>span {
+  width: 50px;
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.width-60 {
+  width: 60px
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.width-60>span {
+  width: 60px;
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.width-70 {
+  width: 70px
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.width-70>span {
+  width: 70px;
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.width-80 {
+  width: 80px
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.width-80>span {
+  width: 80px;
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.width-90 {
+  width: 90px
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.width-90>span {
+  width: 90px;
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.width-100 {
+  width: 100px
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.width-100>span {
+  width: 100px;
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.width-110 {
+  width: 110px
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.width-110>span {
+  width: 110px;
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.width-120 {
+  width: 120px
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.width-120>span {
+  width: 120px;
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.width-150 {
+  width: 150px
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.width-150>span {
+  width: 150px;
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.width-180 {
+  width: 180px
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.width-180>span {
+  width: 180px;
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.width-200 {
+  width: 200px
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.width-200>span {
+  width: 200px;
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.width-250 {
+  width: 250px
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.width-250>span {
+  width: 250px;
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.width-300 {
+  width: 300px
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.width-300>span {
+  width: 300px;
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.width-320 {
+  width: 320px
+}
+
+div.react-table-container>table.react-table>tbody>tr>td.width-320>span {
+  width: 320px;
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap
+}
+
+.material-ui-card img.profile-image {
+  display: block;
+  border-radius: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+  box-shadow: 0 0 1em rgba(0, 0, 0, .5);
+  border: 2px solid #fff
+}
+
+.material-ui-card table.term-schedule-label {
+  width: 100%
+}
+
+.material-ui-card table.term-schedule-label>tbody>tr>td {
+  font-size: .85em;
+  width: 33.33%
+}
+
+.material-ui-card table.term-schedule-label>tbody>tr>td.start {
+  text-align: left;
+  color: #616161
+}
+
+.material-ui-card table.term-schedule-label>tbody>tr>td.midcut {
+  text-align: center;
+  color: #1976d2
+}
+
+.material-ui-card table.term-schedule-label>tbody>tr>td.end {
+  text-align: right;
+  color: #f57c00
+}
+
+.material-ui-card table.term-schedule-label>tbody>tr>td.end.bar, .material-ui-card table.term-schedule-label>tbody>tr>td.midcut.bar, .material-ui-card table.term-schedule-label>tbody>tr>td.start.bar {
+  font-style: normal
+}
+
+div.default-layout {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  background: #fff;
+  background: linear-gradient(#fff, #d6eeec)
+}
+
+div.default-layout>.content {
+  position: absolute;
+  left: .5em;
+  top: 60px;
+  right: .5em;
+  bottom: 40px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  overflow-x: hidden;
+  overflow-y: auto
+}
+
+div.default-layout>.content.toolbar {
+  top: 100px
+}
+
+div.default-layout>.footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 40px;
+  line-height: 40px;
+  font-size: .8em;
+  font-style: italic;
+  color: #fff;
+  background-color: rgba(0, 0, 0, .5);
+  text-align: center
+}
+
+div.circular-progress-container {
+  text-align: center;
+  margin-bottom: 1em
+}
+.material-icons {
+  font-family: Material Icons;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "liga"
+}
+
+.material-icons.size-16 {
+  font-size: 16px
+}
+
+.material-icons.size-18 {
+  font-size: 18px
+}
+
+.material-icons.size-20 {
+  font-size: 20px
+}
+
+.material-icons.size-28 {
+  font-size: 28px
+}
+
+.material-icons.size-32 {
+  font-size: 32px
+}
+
+.material-ui-card {
+  padding: .25em;
+  margin: .5em .25em
+}
+
+body, html {
+  font-family: Roboto, sans-serif
+}
+
+body, body>#app, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0
+}
+
+body>#app {
+  position: relative
+}
+
+a {
+  text-decoration: none
+}
+
+a:visited {
+  color: blue
+}
+
+.sidebar {
+  display:none;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: rgb(255, 255, 255);
+  transition: transform 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 10px, rgba(0, 0, 0, 0.23) 0px 3px 10px;
+  border-radius: 0px;
+  height: 100%;
+  width: 256px;
+  position: fixed;
+  z-index: 1300;
+  left: 0px;
+  top: 0px;
+  transform: translate(0px, 0px);
+  overflow: auto;
+}
+
+.sidebar .btn-span {
+  border: 10px;
+  box-sizing: border-box;
+  display: block;
+  font-family: Roboto, sans-serif;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+  font-size: 16px;
+  font-weight: inherit;
+  transform: translate(0px, 0px);
+  color: rgba(0, 0, 0, 0.87);
+  line-height: 48px;
+  position: relative;
+  transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  white-space: nowrap;
+  background: none;
+}
+
+.sidebar .sidebar-spandiv {
+  margin-left: 0px;
+  padding: 0px 16px 0px 72px;
+  position: relative;
+}
+
+.material-icon {
+  color: rgb(117, 117, 117);
+  position: absolute;
+  font-size: 24px;
+  display: block;
+  user-select: none;
+  transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  height: 24px;
+  width: 24px;
+  top: 0px;
+  margin: 12px;
+  left: 4px;
+}

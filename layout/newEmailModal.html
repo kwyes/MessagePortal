@@ -1,0 +1,113 @@
+<div class="modal fade modal-primary" id="newEmailModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-custom">
+        <div class="modal-content">
+            <div class="card card-login card-plain">
+                <div class="modal-header justify-content-center">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="modal-close-icon">&times;</span>
+                    </button>
+
+
+                    <div class="header header-primary text-center">
+                        <h4>New Mass Email</h4>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="card-body">
+                        <form id="massEmailForm" class="" action="" method="post" enctype="multipart/form-data">
+                            <div class="task1">
+                                <input type="hidden" value="email_send" name="type">
+                                <input type="hidden" value="ext_parent_email" name="toType">
+                                <div class="row row-eq-height mg-v-20">
+                                    <div class="col-md-4 text-right">Message Category
+                                        <span class="color-red">*</span></div>
+                                    <div class="col-md-8">
+                                        <div class="form-group width60per">
+                                            <select id="msg-category" class="form-control custom-form" name="category"
+                                                required="required">
+                                                <option value="">Select Category..</option>
+                                                <option value="user_credential" selected>Parent User Credential</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row row-eq-height mg-v-20">
+                                    <div class="col-md-4 text-right"></div>
+                                    <div class="col-md-8 form-group">
+                                        <label>
+                                            <input class="form-check-input checkbox-parentsAuth" type="checkbox"
+                                                name="parentsAuthCheck" value="1">
+                                            Send to Parents Auth
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="row row-eq-height mg-v-20 massEmail-titleWrapper">
+                                    <div class="col-md-4 text-right">Title<span class="color-red">*</span></div>
+                                    <div class="col-md-8 form-group">
+                                        <input type="text" class="form-control width60per" name="title"
+                                            id="massEmail-title" maxlength="70" placeholder="Max 70 characters... ">
+                                    </div>
+                                </div>
+
+                                <div class="row row-eq-height mg-v-20 massEmail-bodyWrapper">
+                                    <div class="col-md-4 text-right">Body</div>
+                                    <div class="col-md-8 form-group">
+                                        <div class="wrapper-editor">
+                                            <textarea class="form-control align-self-end width60per" id="massEmail-body"
+                                                name="body" rows="10" maxlength="280"
+                                                placeholder="Max 280 characters... "></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12 text-center">
+                                        <button type="button" class="btn btn-fill btn-default btn-sm"
+                                            id="massEmail-cancel-btn">Cancel</button>
+                                        <button type="button" class="btn btn-fill btn-info btn-sm"
+                                            id="massEmail-next-btn">Next<i
+                                                class="material-icons">keyboard_arrow_right</i></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="task2">
+                                <div class="row row-eq-height mg-v-20">
+                                    <div class="col-md-6 text-center">
+                                        <h5># of Verified Email</h5>
+                                        <h2 class="verifiedMail"></h2>
+                                    </div>
+                                    <div class="col-md-6 text-center">
+                                        <h5># of Unverified Email</h5>
+                                        <h2 class="unverifiedMail"></h2>
+                                    </div>
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-md-12 text-center">
+                                        <button type="button" class="btn btn-fill btn-info btn-sm"
+                                            id="massEmail-back-btn">
+                                            <i class="material-icons">keyboard_arrow_left</i> Back</button>
+                                        <button type="button" class="btn btn-fill btn-warning btn-sm"
+                                            id="massEmail-send-btn">Send Email</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script type='text/javascript' src='editor/textboxio/textboxio.js'></script>
+<script>
+
+    $(document).ready(function () {
+    });
+</script>

@@ -1,0 +1,11 @@
+{
+  "require": {
+       "alymosul/exponent-server-sdk-php": "dev-master"
+   },
+   "repositories": [
+       {
+           "type": "vcs",
+           "url": "https://github.com/terryBaz/exponent-server-sdk-php"
+       }
+   ]
+}

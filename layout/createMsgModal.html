@@ -1,0 +1,254 @@
+<div class="modal fade modal-primary" id="createMsgModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-custom">
+        <div class="modal-content">
+            <div class="card card-login card-plain">
+                <div class="modal-header justify-content-center">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="modal-close-icon">&times;</span>
+                    </button>
+
+
+                    <div class="header header-primary text-center">
+                        <h4>Create Message</h4>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="card-body">
+                        <form id="messageForm" class="" action="" method="post" enctype="multipart/form-data">
+                            <div class="task1">
+                                <div class="row row-eq-height mg-v-20">
+                                    <div class="col-md-4 text-right">Message Category
+                                        <span class="color-red">*</span></div>
+                                    <div class="col-md-8">
+                                        <div class="form-group width60per">
+                                            <select id="msg-category" class="form-control custom-form" name="category"
+                                                required="required">
+                                                <option value="">Select Category..</option>
+                                                <option value="announcement_school" selected>School Announcement
+                                                </option>
+                                                <!-- <option value="news_schoolgeneral">School General</option>
+                                                <option value="accounting_feereminder">Fee Reminder</option> -->
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row row-eq-height mg-v-20">
+                                    <div class="col-md-4 text-right">Title
+                                        <span class="color-red">*</span></div>
+                                    <div class="col-md-8 form-group">
+                                        <input type="text" class="form-control width60per" name="title" id="msg-title"
+                                            maxlength="70" required="required" placeholder="Max 70 characters... ">
+                                    </div>
+                                </div>
+
+                                <div class="row row-eq-height mg-v-20">
+                                    <div class="col-md-4 text-right">Body</div>
+                                    <div class="col-md-8 form-group">
+                                        <div class="wrapper-editor">
+                                            <textarea class="form-control align-self-end width60per" id="msg-body"
+                                                name="body" rows="10" maxlength="280"
+                                                placeholder="Max 280 characters... "></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12 text-center">
+                                        <button type="button" class="btn btn-fill btn-default btn-sm"
+                                            id="msg-cancel-btn">Cancel</button>
+                                        <button type="button" class="btn btn-fill btn-info btn-sm"
+                                            id="msg-next-btn">Next<i
+                                                class="material-icons">keyboard_arrow_right</i></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="task2">
+                                <div class="row row-eq-height mg-v-20">
+                                    <div class="col-md-4 text-right">Publish to
+                                        <span class="color-red">*</span></div>
+                                    <div class="col-md-8 form-group">
+                                        <div>
+                                            <label class="form-check-label mg-r-20">
+                                                <input class="form-check-input checkbox-credit checkAll" type="checkbox"
+                                                    name="publishCheck" value="1">
+                                                Select all
+                                            </label><br />
+                                            <label class="form-check-label mg-r-20">
+                                                <input class="form-check-input checkbox-credit publishTo"
+                                                    type="checkbox" name="pmCheck" value="1" checked>
+                                                Parent Mobile App
+                                            </label>
+
+                                            <label class="form-check-label">
+                                                <input class="form-check-input checkbox-credit publishTo"
+                                                    type="checkbox" name="pwCheck" value="1">
+                                                Parent Portal Web
+                                            </label><br />
+                                            <label class="form-check-label mg-r-20">
+                                                <input class="form-check-input checkbox-credit publishTo"
+                                                    type="checkbox" name="smCheck" value="1">
+                                                Student Mobile App
+                                            </label>
+                                            <label class="form-check-label">
+                                                <input class="form-check-input checkbox-credit publishTo"
+                                                    type="checkbox" name="swCheck" value="1">
+                                                Student Portal Web
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row row-eq-height mg-v-20">
+                                    <div class="col-md-4 text-right">Post on the front page slider?
+                                        <span class="color-red">*</span></div>
+                                    <div class="col-md-8">
+                                        <div class="row custom-row">
+                                            <div class="form-check-radio col-md-3">
+                                                <label class="form-check-label" id="radioY-label">
+                                                    <input class="form-check-input post-fp" type="radio" name="post"
+                                                        id="" value="1" autocomplete="off">
+                                                    Yes
+                                                    <span class="form-check-sign"></span>
+                                                </label>
+                                            </div>
+                                            <div class="form-check-radio col-md-3">
+                                                <label class="form-check-label">
+                                                    <input class="form-check-input post-fp" type="radio" name="post"
+                                                        id="" value="0" autocomplete="off" checked="checked">
+                                                    No
+                                                    <span class="form-check-sign"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row row-eq-height mg-v-20">
+                                    <div class="col-md-4 text-right">Publish immediately?</div>
+                                    <div class="col-md-8">
+                                        <div class="row custom-row">
+                                            <div class="form-check-radio col-md-3">
+                                                <label class="form-check-label radio-publish">
+                                                    <input class="form-check-input pub-i" type="radio" name="publish"
+                                                        id="" value="1" autocomplete="off" checked="checked">
+                                                    Yes
+                                                    <span class="form-check-sign"></span>
+                                                </label>
+                                            </div>
+                                            <div class="form-check-radio col-md-3">
+                                                <label class="form-check-label radio-publish">
+                                                    <input class="form-check-input pub-i" type="radio" name="publish"
+                                                        id="" value="0" autocomplete="off">
+                                                    No
+                                                    <span class="form-check-sign"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row row-eq-height mg-v-20 publishWrapper">
+                                    <div class="col-md-4 text-right">Publish at</div>
+                                    <div class="col-md-8 form-group">
+                                        <input type="text" class="form-control datepicker-pa width60per"
+                                            data-date-format="YYYY-MM-DD hh:mm A" name="publishAt" id="publishAt"
+                                            readonly>
+                                        <label class="fontSize12">UTC-8 Pacific Time (Vancouver)
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="row row-eq-height mg-v-20">
+                                    <div class="col-md-4 text-right">Message has expiry date?</div>
+                                    <div class="col-md-8">
+                                        <div class="row custom-row">
+                                            <div class="form-check-radio col-md-3">
+                                                <label class="form-check-label radio-expiry">
+                                                    <input class="form-check-input ex-date" type="radio" name="expiry"
+                                                        id="" value="1" autocomplete="off">
+                                                    Yes
+                                                    <span class="form-check-sign"></span>
+                                                </label>
+                                            </div>
+                                            <div class="form-check-radio col-md-3">
+                                                <label class="form-check-label radio-expiry">
+                                                    <input class="form-check-input ex-date" type="radio" name="expiry"
+                                                        id="" value="0" autocomplete="off" checked="checked">
+                                                    No
+                                                    <span class="form-check-sign"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row row-eq-height mg-v-20 displayUntil">
+                                    <div class="col-md-4 text-right">Display until</div>
+                                    <div class="col-md-8 form-group">
+                                        <input type="text" class="form-control datepicker-du width60per"
+                                            data-date-format="YYYY-MM-DD hh:mm A" name="expiryDate" id="disp-until"
+                                            readonly>
+                                        <label class="fontSize12">UTC-8 Pacific Time (Vancouver)
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 text-center">
+                                        <button type="button" class="btn btn-fill btn-info btn-sm" id="msg-back-btn">
+                                            <i class="material-icons">keyboard_arrow_left</i> Back</button>
+                                        <button type="button" class="btn btn-fill btn-warning btn-sm"
+                                            id="msg-save-btn">Save and
+                                            Publish</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script type='text/javascript' src='editor/textboxio/textboxio.js'></script>
+<script>
+
+    $(document).ready(function () {
+        $(".datepicker-pa").datetimepicker({
+            ignoreReadonly: true,
+            icons: {
+                time: "fa fa-clock-o",
+                date: "fa fa-calendar",
+                up: "fa fa-chevron-up",
+                down: "fa fa-chevron-down",
+                previous: "fa fa-chevron-left",
+                next: "fa fa-chevron-right",
+                today: "fa fa-screenshot",
+                clear: "fa fa-trash",
+                close: "fa fa-remove"
+            },
+            minDate: new Date().getTime()
+        });
+
+        var pdate = $("#publishAt").val()
+
+        $(".datepicker-du").datetimepicker({
+            ignoreReadonly: true,
+            icons: {
+                time: "fa fa-clock-o",
+                date: "fa fa-calendar",
+                up: "fa fa-chevron-up",
+                down: "fa fa-chevron-down",
+                previous: "fa fa-chevron-left",
+                next: "fa fa-chevron-right",
+                today: "fa fa-screenshot",
+                clear: "fa fa-trash",
+                close: "fa fa-remove"
+            },
+            minDate: new Date(pdate).getTime() + 24 * 60 * 60 * 1000 - 1
+        });
+    });
+</script>

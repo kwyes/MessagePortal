@@ -1,9 +1,7 @@
 <?php
 require_once __DIR__.'/sendEmailClass.php';
 
-$dsn = "odbc:Driver={SQL Server};Server=10.100.4.6;Database=Bodwell;Uid=web;Pwd=AJgw!cG4nw;";
 
-// $dsn = "odbc:Driver={SQL Server};Server=10.100.0.5;Database=Bodwell;Uid=devweb;Pwd=9zQjq4WRgkFF;";
 $conn = new PDO($dsn);
 $query = "SELECT A.LoginID, A.CreateDate, a.FirstName, A.LastName, count(U.ApplicationID) UCount, count(C.ApplicationID) ACount
   FROM tblBHSApplicationUser A

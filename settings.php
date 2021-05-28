@@ -30,7 +30,7 @@ function getEnvironmentSettings() {
                 ),
                 'smtp' => array(
                     'debug' => false,
-                    'host' => 'smtp.sendgrid.net',
+                    'host' => '',
                     'port' => '587',
                     'secure' => 'TLS',
                     'auth' => true,
@@ -51,7 +51,7 @@ function getEnvironmentSettings() {
                 ),
                 'smtp' => array(
                     'debug' => false,
-                    'host' => 'smtp.sendgrid.net',
+                    'host' => '',
                     'port' => '587',
                     'secure' => 'TLS',
                     'auth' => true,
@@ -98,7 +98,7 @@ function getEnvironmentSettings() {
                 'bypassAuth' => false,
                 'smtp' => array(
                     'debug' => 0,
-                    'host' => 'smtp.van.terago.ca',
+                    'host' => '',
                     'port' => '25',
                     'secure' => '',
                     'auth' => false,
